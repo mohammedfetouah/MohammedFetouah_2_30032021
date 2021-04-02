@@ -1,0 +1,12 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+header {
+    display: flex;
+}
+ul {
+    list-style: none;
+}
+footer {
+    background: #f2f2f2;
+}
