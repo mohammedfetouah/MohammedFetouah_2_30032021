@@ -2,8 +2,35 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 header {
+    width: 100%;
     display: flex;
+    justify-content: space-between;
 }
+
+.nav-menu {
+    display: flex; 
+}
+
+.nav a {
+    padding: 20px 41px;
+    text-decoration: none;
+    color: #000000;
+}
+a:hover{
+    color: #0065fc;
+    border-top: 2px solid #0065fc;
+}
+.nav-blue a {
+    color: #0065fc;
+    font-weight: bold;
+}
+h1 {
+    font-size: 22px;
+}
+.recherche-position {
+    border-radius: 1px solid blue;
+}
+
 ul {
     list-style: none;
 }
