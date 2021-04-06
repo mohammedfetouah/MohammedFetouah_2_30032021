@@ -22,8 +22,8 @@
         </div>
         <nav class="nav">
             <ul class="nav-menu">
-                <li><a href="#">hébergements</a></li>
-                <li><a href="#">Activités</a></li>
+                <li><a href="index.html" class="active">hébergements</a></li>
+                <li><a href="#" >Activités</a></li>
                 <li class="nav-blue"><a href="#">S'inscrire</a></li>
             </ul>         
         </nav>
@@ -34,34 +34,34 @@
 
     <!----------------------------------------------DéBUT block Recherche formulaire------------------------------------->
     <div class="rechercheform">
-        <div class="recherche-position">
-            <span><i class="fas fa-map-marker-alt"></i></span>          
-            <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10">
-            <input class="favorite styled" type="button" value="Rechercher">
+        <div class="recherche-position"> <!--kamelcase--> <!--snakecase-->
+            <span class="span-icon"><i class="fas fa-map-marker-alt"></i></span>          
+            <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10" placeholder="Marseille, France">
+            <input class="favorite styled" type="button" value="Rechercher"  >
         </div>
-        <div>
+        <div>         
             <div>
-                <span>Filtre</span>
-            </div>           
-            <div>
-                <ul>
-                    <li>
-                        <button class="">
-                            <span><i class="fas fa-money-bill-wave"></i></span>&nbsp;économique
+                <ul class="recherche-filtres">
+                    <li class="recherche-categorie">
+                        <span>Filtre</span>
+                    </li>
+                    <li class="recherche-filtre">
+                        <button class="recherche-filtre-button">
+                            <span class="recherche-filtre-icon"><i class="fas fa-money-bill-wave"></i></span>&nbsp;<span class="recherche-filtre-name">économique</span> 
                         </button>                      
                     </li>
-                    <li>
-                        <button class="">
-                            <span><i class="fas fa-child"></i></span>&nbsp;Familial
+                    <li class="recherche-filtre">
+                        <button class="recherche-filtre-button">
+                            <span class="recherche-filtre-icon"><i class="fas fa-child"></i></span>&nbsp;Familial
                         </button> 
-                    <li>
-                        <button class="">
-                            <span><i class="fas fa-heart"></i></span>&nbsp;Romantique
+                    <li class="recherche-filtre">
+                        <button class="recherche-filtre-button">
+                            <span class="recherche-filtre-icon"><i class="fas fa-heart"></i></span>&nbsp;Romantique
                         </button> 
                     </li>
-                    <li>
-                        <button class="">
-                            <span><i class="fas fa-dog"></i></span>&nbsp;Animaux autorisés
+                    <li class="recherche-filtre">
+                        <button class="recherche-filtre-button">
+                            <span class="recherche-filtre-icon"><i class="fas fa-dog"></i></span>&nbsp;Animaux autorisés
                         </button> 
                     </li>                    
                 </ul>
@@ -73,7 +73,7 @@
         <span><i class="fas fa-info"></i></span>&nbsp;Plus de 500 logements sont disponibles dans cette ville       
     </div>
     <!----------------------------------------------DEBUT block HEBERGEMENTS A MARSEILLE-------------------------------->
-    <section class="les-hebergement">
+    <section class="les-hebergement bg-light-grey">
         <h2>Hébergement à Marseille</h2>
         <div class="hebergements">
             <a href="hebergements/1_xlarge/AubergeLaCannebiere.jpg" class="hebergement"> 
@@ -244,7 +244,7 @@
 
 
         <!----------------------------------------------DEBUT block  LES PLUS POPULAIRES-------------------------------->  
-        <aside class="les-plus-populaire">
+        <aside class="les-plus-populaire bg-light-grey">
             <div class="populaire-titre">
                 <h2>Les plus populaires</h2>
                 <i class="fas fa-chart-line"></i>
@@ -400,7 +400,7 @@
 
 
     <!----------------------------------------------------DEBUT FOOTER--------------------------------------->
-    <footer>
+    <footer class="bg-light-grey">
         <div class="footer-colonnes">
             <div class="footer-colonne">
                 <div>

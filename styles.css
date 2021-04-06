@@ -1,6 +1,12 @@
 body {
     font-family: 'Raleway', sans-serif;
 }
+
+
+
+
+/*----------------------------------------------DEBUT HEADER------------------------------------------- */
+
 header {
     width: 100%;
     display: flex;
@@ -16,7 +22,7 @@ header {
     text-decoration: none;
     color: #000000;
 }
-a:hover{
+.nav-menu a.active{
     color: #0065fc;
     border-top: 2px solid #0065fc;
 }
@@ -27,13 +33,111 @@ a:hover{
 h1 {
     font-size: 22px;
 }
+/*----------------------------------------------FIN HEADER------------------------------------------- */
+
+
+
+
+
+/*------------------------------------DEBUT RECHERCHE FORMULAIRE--------------------------------------- */
+
 .recherche-position {
     border-radius: 1px solid blue;
+    display: flex;
+    width: 410px;
+    margin-top: 25px;
 }
+.span-icon {
+    display: block;
+    height: 51px;
+    width: 15%;
+    line-height: 51px;
+    text-align: center;
+    background:#f2f2f2;
+    border-radius: 14px 0 0 14px;
+    
+}
+input#name {
+    border-left: 0;
+    border-right: 0; 
+    border: 1px solid #f2f2f2; 
+    width: 55%;
+    outline-style: none;
+    font-size: 18px;
+    padding-left: 19px;
+}
+input#name::placeholder {
+    color: black
+}
+
+input.favorite.styled {
+    background: #0065fc;
+    border: 0;
+    font-size: 18px;
+    width: 30%;
+    color: white;
+    border-radius: 0 14px 14px 0;
+    outline-style: none;
+    height: 51px; 
+ }
+ 
+ ul.recherche-filtres {
+     display: flex;
+ }
+ li.recherche-filtre {
+     padding: 0 26px;
+ }
+ .recherche-filtre-button {
+    height: 48px;
+    font-size: 18px;
+    background: white;
+    border: 1px solid #d9d9d9;
+    border-radius: 25px;
+}
+span.recherche-filtre-icon {
+    background: #deebff;
+    padding: 14px 17px;
+    font-size: 19px;
+    color: #0065fc;
+    border-radius: 105px;
+}
+
+ /*------------------------------------FIN RECHERCHE FORMULAIRE--------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ul {
     list-style: none;
 }
 footer {
+    background: #f2f2f2;
+}
+img {
+    max-width: 100%;
+}
+.bg-light-grey {
     background: #f2f2f2;
 }
