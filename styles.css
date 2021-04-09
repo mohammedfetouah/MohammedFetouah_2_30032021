@@ -1,71 +1,103 @@
-body {
-    font-family: 'Raleway', sans-serif;
+@font-face {
+    font-family: 'raleway';
+    src: url('fonts/Raleway-Regular.ttf');
+    font-weight: 500;
+    font-style: normal;
 }
-
-
-
-
-/*----------------------------------------------DEBUT HEADER------------------------------------------- */
+@font-face {
+    font-family: 'raleway black';
+    src: url('fonts/Raleway-Black.ttf');
+    font-weight: 900;
+    font-style: normal;
+}
+body {
+    font-family: 'raleway';
+}
+body * {
+    box-sizing: border-box;
+}
+/*------------------------------------------DEBUT HEADER-----------------------------------*/
 
 header {
     width: 100%;
+}
+header nav .logo-reservia {
+    margin: 25px 0 0 15px;
+}
+header nav .logo-reservia img.logo-reservia-img {
+    width: 120px;
+}
+header nav.nav {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
-
-.nav-menu {
-    display: flex; 
-}
-
-.nav a {
-    padding: 20px 41px;
+header nav.nav a {
     text-decoration: none;
-    color: #000000;
+    font-size: 18px;
+    font-family: 'raleway';
 }
-.nav-menu a.active{
-    color: #0065fc;
-    border-top: 2px solid #0065fc;
+header nav .nav-menu-sinscrire {
+    margin: 50px 15px 0 0;
 }
-.nav-blue a {
+header nav .nav-menu-sinscrire a {
     color: #0065fc;
     font-weight: bold;
 }
-h1 {
-    font-size: 22px;
-}
-/*----------------------------------------------FIN HEADER------------------------------------------- */
-
-
-
-
-
-/*------------------------------------DEBUT RECHERCHE FORMULAIRE--------------------------------------- */
-
-.recherche-position {
-    border-radius: 1px solid blue;
+header nav.nav ul.nav-menu {
     display: flex;
-    width: 410px;
+    flex: 100%;
     margin-top: 25px;
 }
-.span-icon {
+header nav.nav ul.nav-menu li  {
+    flex: 50%;
+    text-align: center;
+    border-bottom: 3px solid #f2f2f2;
+}
+header nav.nav ul.nav-menu li.active {
+    border-bottom: 3px solid #0065fc ;
+}
+header nav.nav ul.nav-menu li.active a {
+    color: #0065fc;
+}
+header nav.nav ul.nav-menu li a {
+    display: block;
+    padding: 10px 0;
+    color: black;
+}
+/*--------------------------------------------FIN HEADER-----------------------------------*/
+
+
+/*---------------------------------------DEBUT RECHERCHE FORM-------------------------------*/
+
+h1 {
+    font-family: 'Raleway';
+    font-weight: bold;
+    font-size: 23px; 
+}
+.rechercheform {
+    margin: 25px 15px 0 15px;
+}
+.rechercheform .ville {
+    margin-top: 15px;
+}
+.recherche-position {
+    display: block;
+    position: relative;
+    width: 119%;
+    margin-top: 25px;
+}
+.recherche-position .span-icon {
     display: block;
     height: 51px;
     width: 15%;
     line-height: 51px;
     text-align: center;
-    background:#f2f2f2;
+    background: #f2f2f2;
     border-radius: 14px 0 0 14px;
-    
+    font-size: 20px;
 }
-input#name {
-    border-left: 0;
-    border-right: 0; 
-    border: 1px solid #f2f2f2; 
-    width: 55%;
-    outline-style: none;
-    font-size: 18px;
-    padding-left: 19px;
-}
+
 input#name::placeholder {
     color: black
 }
@@ -80,64 +112,183 @@ input.favorite.styled {
     outline-style: none;
     height: 51px; 
  }
- 
- ul.recherche-filtres {
-     display: flex;
- }
- li.recherche-filtre {
-     padding: 0 26px;
- }
- .recherche-filtre-button {
+
+ .recherche-position input#name {
+    border-left: 0;
+    border-right: 0;
+    border: 1px solid #f2f2f2;
+    width: 60%;
+    outline-style: none;
+    height: 50px;
+    font-size: 18px;
+    top: 0;
+    right: 104px;
+    position: absolute;
+    padding-left: 19px;
+    font-family: 'raleway';
+    font-weight: bold;
+}
+ .recherche-position button.search {
+    border: 0;
+    position: absolute;
+    top: 0;
+    border-radius: 18px;
+    right: 66px;
+    height: 50px;
+    font-size: 18px;
+    background: #0065fc;
+    color: white;
+    width: 60px;
+    outline-style: none;
+}
+/*---------------------------------------FIN RECHERCHE FORM-------------------------------*/
+
+
+
+
+
+/*---------------------------------DEBUT RECHERCHE CATEGORIE------------------------------*/
+
+
+li.recherche-categorie {
+    margin-top: 25px;
+}
+li.recherche-categorie span.filtres {
+    font-size: 18px;
+    font-family: 'raleway';
+    font-weight: bold;
+}
+.recherche-filtres .recherche-filtre {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+.recherche-filtre li {
+    margin: 10px;
+}
+.recherche-filtre-button {
     height: 48px;
     font-size: 18px;
     background: white;
     border: 1px solid #d9d9d9;
     border-radius: 25px;
+    outline-style: none;
+    position: relative;
 }
 span.recherche-filtre-icon {
+    width: 50px;
     background: #deebff;
-    padding: 14px 17px;
-    font-size: 19px;
+    position: absolute;
+    font-size: 20px;
+    top: -2px;
+    height: 50px;
+    line-height: 50px;
+    left: -9px;
     color: #0065fc;
     border-radius: 105px;
 }
-
- /*------------------------------------FIN RECHERCHE FORMULAIRE--------------------------------------- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-ul {
-    list-style: none;
+span.recherche-filtre-name {
+    margin: 0 10px 0 40px;
 }
-footer {
+/*--------------------------------------FIN RECHERCHE CATEGORIES-------------------------------*/
+
+
+
+
+/*---------------------------------------DEBUT INFO HEBERGEMENTS-------------------------------*/
+
+.block-info-hebergements {
+    margin: 15px 15px 0px 15px;
+    display: flex;
+}
+span.info-icon {
+    font-size: 10px;
+    height: 24px;
+    width: 24px;
+    color: #0065fc;
+}
+span.info-icon i.fas.fa-info{   
+    padding: 0.4em 0.7em;
+    border-radius: 60px;
+    box-shadow: 0px 0px 2px #888;
+}
+span.info-hebergement {
+    margin-top: 2px;
+    margin-left: 10px;
+}
+/*----------------------------------------------------- FIN INFO HEBERGEMENTS-------------------------------*/
+
+/*----------------------------------------- DEBUT BLOCK HEBERGEMENTS-POPULAIRE-------------------------------*/
+section.Hebergments-populaire {
     background: #f2f2f2;
+    margin-top: 25px;
+    display: flex;
 }
-img {
-    max-width: 100%;
+h2 {
+    font-family: 'Raleway';
+    font-weight: bold;
+    font-size: 23px;
 }
-.bg-light-grey {
-    background: #f2f2f2;
+
+/*----------------------------------------- FIN BLOCK HEBERGEMENTS-POPULAIRE---------------------------------*/
+aside.les-plus-populaire .populaires {
+    margin: 25px 0px 0px 0;
+}
+aside.les-plus-populaire {
+    width: 100%;
+    margin: 25px 15px 35px 15px;
+}
+aside.les-plus-populaire .populaire-titre {
+    display: flex;
+    justify-content: space-between;
+}
+aside.les-plus-populaire .populaire-titre i.fas.fa-chart-line {
+    font-size: 23px;
+}
+aside.les-plus-populaire a.populaire {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    margin: 10px 0px 0px 0px;
+    background: white;
+    border-radius: 25px;
+    padding: 10px;
+    box-shadow: 10px 10px 10px #e9e9e9;
+}
+aside.les-plus-populaire a.populaire .populaire-image-div {
+    flex: 35%;
+}
+aside.les-plus-populaire a.populaire .populaire-description {
+    padding-left: 10px;
+    font-size: 17px;
+    flex: 55%;
+    display: block;
+}
+aside.les-plus-populaire a.populaire .populaire-description .populaire-name {
+    font-family: 'raleway';
+    font-weight: bold;
+}
+img.populaire-images {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+    object-fit: cover;
+}
+
+
+
+
+/*-------------------------------------------- DEBUT BLOCK LES PLUS POPULAIRE---------------------------------*/
+
+
+/*-------------------------------------------- FIN BLOCK LES PLUS POPULAIRE---------------------------------*/
+
+
+
+
+@media screen and (min-width: 769px) {
+    body {
+        margin: 0 50px;
+    }
+
 }
