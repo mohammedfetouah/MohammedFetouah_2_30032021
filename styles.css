@@ -219,7 +219,7 @@ span.info-hebergement {
 /*----------------------------------------------------- FIN INFO HEBERGEMENTS-------------------------------*/
 
 /*----------------------------------------- DEBUT BLOCK HEBERGEMENTS-POPULAIRE-------------------------------*/
-section.Hebergments-populaire {
+.Hebergments-populaire {
     background: #f2f2f2;
     margin-top: 25px;
     display: flex;
@@ -230,7 +230,7 @@ h2 {
     font-size: 23px;
 }
 
-/*----------------------------------------- FIN BLOCK HEBERGEMENTS-POPULAIRE---------------------------------*/
+
 aside.les-plus-populaire .populaires {
     margin: 25px 0px 0px 0;
 }
@@ -252,8 +252,10 @@ aside.les-plus-populaire a.populaire {
     margin: 10px 0px 0px 0px;
     background: white;
     border-radius: 25px;
-    padding: 10px;
+    padding: 5px;
     box-shadow: 10px 10px 10px #e9e9e9;
+    text-decoration: none;
+    min-height: 135px;
 }
 aside.les-plus-populaire a.populaire .populaire-image-div {
     flex: 35%;
@@ -267,6 +269,25 @@ aside.les-plus-populaire a.populaire .populaire-description {
 aside.les-plus-populaire a.populaire .populaire-description .populaire-name {
     font-family: 'raleway';
     font-weight: bold;
+    color: black;
+    font-size: 18px;
+}
+aside.les-plus-populaire a.populaire .populaire-description .prix {
+    color: black;
+    margin-top: 15px;
+    display: block;
+    font-size: 15px;
+}
+aside.les-plus-populaire a.populaire .populaire-description .note {
+    font-size: 11px;
+    margin-top: 45px;
+
+}
+aside.les-plus-populaire a.populaire .populaire-description .note .star-blue {
+    color: #0065fc;
+}
+aside.les-plus-populaire a.populaire .populaire-description .note .star {
+    color: #d9d9d9;
 }
 img.populaire-images {
     width: 100%;
@@ -275,13 +296,57 @@ img.populaire-images {
     object-fit: cover;
 }
 
+/*----------------------------------------- FIN BLOCK HEBERGEMENTS-POPULAIRE---------------------------------*/
 
 
 
-/*-------------------------------------------- DEBUT BLOCK LES PLUS POPULAIRE---------------------------------*/
+/*-------------------------------------------- DEBUT HEBERGEMENTS A MARSEILLE---------------------------------*/
+
+.hebergements-marseille {
+    background: white;
+    margin-top: 25px;
+}
+.hebergements {
+    margin: 25px 15px 0px 15px;
+    width: 100%;
+}
+img.hebergement-images {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+    object-fit: cover;
+}
+.hebergement-images-div {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    margin: 10px 0px 0px 0px;
+    background: white;
+    border-radius: 25px;
+    padding: 5px;
+    box-shadow: 10px 10px 10px #e9e9e9;
+    text-decoration: none;
+    min-height: 135px;
+}
+}
 
 
-/*-------------------------------------------- FIN BLOCK LES PLUS POPULAIRE---------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------- FIN HEBERGEMENTS A MARSEILLE---------------------------------*/
 
 
 
