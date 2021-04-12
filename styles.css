@@ -68,6 +68,9 @@ header nav.nav ul.nav-menu li a {
 /*--------------------------------------------FIN HEADER-----------------------------------*/
 
 
+
+
+
 /*---------------------------------------DEBUT RECHERCHE FORM-------------------------------*/
 
 h1 {
@@ -236,7 +239,7 @@ aside.les-plus-populaire .populaires {
 }
 aside.les-plus-populaire {
     width: 100%;
-    margin: 25px 15px 35px 15px;
+    margin: 25px 15px 0px 15px;
 }
 aside.les-plus-populaire .populaire-titre {
     display: flex;
@@ -302,51 +305,175 @@ img.populaire-images {
 
 /*-------------------------------------------- DEBUT HEBERGEMENTS A MARSEILLE---------------------------------*/
 
-.hebergements-marseille {
+.hebergements-a-marseille {
     background: white;
-    margin-top: 25px;
-}
-.hebergements {
-    margin: 25px 15px 0px 15px;
-    width: 100%;
-}
-img.hebergement-images {
-    width: 100%;
-    height: 100%;
-    border-radius: 20px 0 0 20px;
-    object-fit: cover;
-}
-.hebergement-images-div {
     display: flex;
-    flex-direction: row;
+}
+.hebergements-marseille {
+    width: 100%;
+    margin: 25px 15px 0px 15px;
+}
+.hebergements-marseille .hebergements {
+    margin: 25px 0 0 0;
+}
+.hebergements-marseille .hebergements a.hebergement {
+    flex-direction: column;
+    display: flex;
     align-items: stretch;
     margin: 10px 0px 0px 0px;
     background: white;
     border-radius: 25px;
     padding: 5px;
-    box-shadow: 10px 10px 10px #e9e9e9;
+    box-shadow: 0px 0px 20px 0px #e9e9e9;
     text-decoration: none;
     min-height: 135px;
 }
+.hebergements-marseille .hebergements a.hebergement .hebergement-description {
+    padding-left: 10px;
+    font-size: 17px;
+    flex: 55%;
+    display: block;
+    padding-top: 15px;
+}
+.hebergements-marseille .hebergements a.hebergement .hebergement-image-div {
+    flex: 35%;
+    height: 115px;
+}
+.hebergements-marseille .hebergements a.hebergement .hebergement-description .hebergement-name {
+    font-family: 'raleway';
+    font-weight: bold;
+    color: black;
+    font-size: 18px;
+}
+.hebergements-marseille .hebergements a.hebergement .hebergement-description .prix {
+    display: block;
+    padding-top: 10px;
+    font-size: 15px;
+    color: black;
+}
+.hebergements-marseille .hebergements a.hebergement .hebergement-description .note {
+    display: block;
+    padding: 10px 0 5px 0;
+    font-size: 11px;
+}
+.hebergements-marseille .hebergements a.hebergement .hebergement-description .note .star-blue {
+    color: #0065fc;
+}
+.hebergements-marseille .hebergements a.hebergement .hebergement-description .note .star {
+    color: #d9d9d9;
+}
+img.hebergement-images {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+.hebergements-marseille .hebergements-plus {
+    margin-top: 25px;
+}
+.hebergements-marseille .hebergement-plus {
+    font-family: 'raleway';
+    font-weight: bold;
+    color: black;
+    font-size: 18px;
+}
+
+/*-------------------------------------------- FIN HEBERGEMENTS A MARSEILLE---------------------------------*/
+
+
+
+
+/*------------------------------------------ DEBUT ACTIVITE A MARSEILLE---------------------------------------*/
+
+section.activites-a-marseille {
+    margin: 60px 15px 0 15px;
+}
+.activites-marseille .activites a.activite {
+    flex-direction: column;
+    display: flex;
+    align-items: stretch;
+    margin-top: 25px;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0px 0px 20px 0px #e9e9e9;
+    text-decoration: none;
+    min-height: 135px;
+}
+
+
+.activites-marseille a.activite .activite-image-div {
+    flex: 35%;
+    height: 115px;
+}
+
+.activites-marseille .activites a.activite .activite-name {
+    font-family: 'raleway';
+    font-weight: bold;
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 25px 0 20px 20px;
+    display: block;
+}
+
+img.activite-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+
+/*------------------------------------------ FIN ACTIVITE A MARSEILLE---------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------------- DEBUT FOOTER---------------------------------------------*/
+
+
+
+footer.bg-light-grey {
+    font-size: 18px;
+    margin-top: 50px;
+    padding-top: 30px;
+    padding-left: 30px;
+    background: #f2f2f2;
+    padding-bottom: 50px;
+}
+span.footer-title {
+    font-family: 'raleway';
+    font-weight: bold;
+    color: black;
+    display: block;
+    padding-top: 20px;
+}
+.footer-colonne a { 
+    font-family: 'raleway';
+    display: block;
+    padding-top: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
 }
 
 
 
+/*-------------------------------------------------- FIN FOOTER---------------------------------------------*/
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-/*-------------------------------------------- FIN HEBERGEMENTS A MARSEILLE---------------------------------*/
 
 
 
