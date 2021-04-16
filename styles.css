@@ -1,13 +1,11 @@
 @font-face {
     font-family: 'raleway';
     src: url('fonts/Raleway-Regular.ttf');
-    font-weight: 500;
     font-style: normal;
 }
 @font-face {
     font-family: 'raleway black';
     src: url('fonts/Raleway-Black.ttf');
-    font-weight: 900;
     font-style: normal;
 }
 body {
@@ -16,6 +14,7 @@ body {
 body * {
     box-sizing: border-box;
 }
+
 /*------------------------------------------DEBUT HEADER-----------------------------------*/
 
 header {
@@ -31,6 +30,9 @@ header nav.nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+header .nav-bar {
+    display: contents;
 }
 header nav.nav a {
     text-decoration: none;
@@ -71,6 +73,8 @@ header nav.nav ul.nav-menu li a {
 
 
 
+
+
 /*---------------------------------------DEBUT RECHERCHE FORM-------------------------------*/
 
 h1 {
@@ -79,21 +83,24 @@ h1 {
     font-size: 23px; 
 }
 .rechercheform {
-    margin: 25px 15px 0 15px;
+    margin: 40px 15px 0 15px;
 }
 .rechercheform .ville {
-    margin-top: 15px;
+    margin-top: 20px;
 }
 .recherche-position {
     display: block;
     position: relative;
-    width: 119%;
-    margin-top: 25px;
+    width: 100%;
+    max-width: 420px;
+    margin-top: 40px;
 }
 .recherche-position .span-icon {
     display: block;
     height: 51px;
     width: 15%;
+    z-index: 2;
+    position: absolute;
     line-height: 51px;
     text-align: center;
     background: #f2f2f2;
@@ -117,34 +124,38 @@ input.favorite.styled {
  }
 
  .recherche-position input#name {
-    border-left: 0;
-    border-right: 0;
-    border: 1px solid #f2f2f2;
-    width: 60%;
+    border: 2px solid #f2f2f2;
+    width: calc(100% - 100px);
     outline-style: none;
     height: 50px;
     font-size: 18px;
-    top: 0;
-    right: 104px;
-    position: absolute;
+    margin: 0 auto;
+    left: 50px;
+    position: relative;
     padding-left: 19px;
     font-family: 'raleway';
     font-weight: bold;
 }
- .recherche-position button.search {
+.recherche-position button.search {
     border: 0;
     position: absolute;
     top: 0;
     border-radius: 18px;
-    right: 66px;
+    right: 25px;
+    display: block;
     height: 50px;
     font-size: 18px;
     background: #0065fc;
     color: white;
-    width: 60px;
+    width: 15%;
     outline-style: none;
 }
+    button span span {
+    display: none;
+}
 /*---------------------------------------FIN RECHERCHE FORM-------------------------------*/
+
+
 
 
 
@@ -154,7 +165,7 @@ input.favorite.styled {
 
 
 li.recherche-categorie {
-    margin-top: 25px;
+    margin-top: 35px;
 }
 li.recherche-categorie span.filtres {
     font-size: 18px;
@@ -198,6 +209,9 @@ span.recherche-filtre-name {
 
 
 
+
+
+
 /*---------------------------------------DEBUT INFO HEBERGEMENTS-------------------------------*/
 
 .block-info-hebergements {
@@ -221,11 +235,19 @@ span.info-hebergement {
 }
 /*----------------------------------------------------- FIN INFO HEBERGEMENTS-------------------------------*/
 
+
+
+
+
+
+
+
 /*----------------------------------------- DEBUT BLOCK HEBERGEMENTS-POPULAIRE-------------------------------*/
 .Hebergments-populaire {
     background: #f2f2f2;
-    margin-top: 25px;
+    margin-top: 40px;
     display: flex;
+    padding-bottom: 35px;
 }
 h2 {
     font-family: 'Raleway';
@@ -234,12 +256,13 @@ h2 {
 }
 
 
-aside.les-plus-populaire .populaires {
-    margin: 25px 0px 0px 0;
+aside.les-plus-populaire {
+    width: 100%;
+    padding: 50px 15px 0px 15px;
 }
 aside.les-plus-populaire {
     width: 100%;
-    margin: 25px 15px 0px 15px;
+    margin: 40px 15px 0px 15px;
 }
 aside.les-plus-populaire .populaire-titre {
     display: flex;
@@ -303,6 +326,12 @@ img.populaire-images {
 
 
 
+
+
+
+
+
+
 /*-------------------------------------------- DEBUT HEBERGEMENTS A MARSEILLE---------------------------------*/
 
 .hebergements-a-marseille {
@@ -311,7 +340,7 @@ img.populaire-images {
 }
 .hebergements-marseille {
     width: 100%;
-    margin: 25px 15px 0px 15px;
+    margin: 40px 15px 0px 15px;
 }
 .hebergements-marseille .hebergements {
     margin: 25px 0 0 0;
@@ -320,7 +349,7 @@ img.populaire-images {
     flex-direction: column;
     display: flex;
     align-items: stretch;
-    margin: 10px 0px 0px 0px;
+    margin: 30px 0px 0px 0px;
     background: white;
     border-radius: 25px;
     padding: 5px;
@@ -369,16 +398,21 @@ img.hebergement-images {
     object-fit: cover;
 }
 .hebergements-marseille .hebergements-plus {
-    margin-top: 25px;
+    margin-top: 40px;
 }
 .hebergements-marseille .hebergement-plus {
     font-family: 'raleway';
     font-weight: bold;
+    display: block;
     color: black;
+    padding-left: 20px;
     font-size: 18px;
 }
 
 /*-------------------------------------------- FIN HEBERGEMENTS A MARSEILLE---------------------------------*/
+
+
+
 
 
 
@@ -430,13 +464,6 @@ img.activite-image {
 
 
 
-
-
-
-
-
-
-
 /*-------------------------------------------------- DEBUT FOOTER---------------------------------------------*/
 
 
@@ -454,7 +481,7 @@ span.footer-title {
     font-weight: bold;
     color: black;
     display: block;
-    padding-top: 20px;
+    padding-top: 45px;
 }
 .footer-colonne a { 
     font-family: 'raleway';
@@ -464,8 +491,6 @@ span.footer-title {
     color: black;
     font-size: 15px;
 }
-
-
 
 /*-------------------------------------------------- FIN FOOTER---------------------------------------------*/
 
@@ -478,9 +503,259 @@ span.footer-title {
 
 
 
-@media screen and (min-width: 769px) {
-    body {
-        margin: 0 50px;
+
+/*---------------------------------------DEBUT FORMAT TABLETTE  (769 - 991) ------------------------------- */
+
+@media screen and (min-width: 769px ) { /*------------------------DEBUT HEADER------------------------------*/ 
+    header nav .logo-reservia {
+        margin: 25px 0 0 50px;
+    }
+    header nav .nav-menu-sinscrire {
+        margin: 50px 50px 0 0;
     }
 
+    /*---------------------------------------------------------------FIN HEADER------------------------------*/ 
+    
+    
+
+
+
+
+
+
+    /*-----------DEBUT RECHERCHE CATEGORIE------------------------------*/
+    .rechercheform {
+        margin: 40px 50px 0 50px;
+    }
+    .block-info-hebergements {
+        margin: 15px 50px 0px 50px;
+        display: flex;
+    }
+
+
+    /*--------------------------------------DEBUT RECHERCHE CATEGORIE-----------------------------------------------*/
+
+    section.hebergements-marseille-populaire { /*------------DEBUT HEBERGEMENT MARSEILLE POPULAIRE--------------------*/
+        display: flex;
+        align-items: baseline;
+        flex-direction: row-reverse;
+    }
+    .Hebergments-populaire {
+        background: #f2f2f2;
+        margin-top: 40px;
+        display: flex;
+        margin-left: 45px;
+        margin-right: 50px;
+        padding-bottom: 4%;
+        border-radius: 20px;
+    } 
+    aside.les-plus-populaire {
+        width: 100%;
+        padding: 50px 40px 0px 40px;
+        margin: 0;
+    }
+    aside.les-plus-populaire a.populaire {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        margin: 30px 0px 0px 0px;
+        background: white;
+        border-radius: 25px;
+        padding: 5px;
+        box-shadow: 10px 10px 10px #e9e9e9;
+        text-decoration: none;
+        min-height: 147px;
+    }
+    .hebergements-marseille {
+        width: 100%;
+        padding: 50px 40px 50px 40px;
+        background: #f2f2f2;
+        margin: 45px 0px 0px 50px;
+        border-radius: 20px;
+    }
+    /*--------------------------------------------------FIN HEBERGEMENT MARSEILLE POPULAIRE--------------------*/
+
+
+
+
+
+
+
+
+    /*--------------------------------------------------DEBUT ACTIVITE MARSEILLE--------------------------------*/
+    section.activites-a-marseille {
+        margin: 60px 50px 0 50px;
+    }
+    /*--------------------------------------------------FIN ACTIVITE MARSEILL------------------------------------*/
+    
+    
+
+
+
+
+
+
+    footer.bg-light-grey { /*-------------------------DEBUT FOOTER----------------------------------------*/
+        font-size: 18px;
+        margin-top: 50px;
+        padding-top: 0px;
+        background: #f2f2f2;
+        padding-bottom: 50px;
+        padding-left: 50px;
+    }
+    footer.bg-light-grey .footer-colonnes {
+        display: flex;
+    }
+    footer.bg-light-grey .footer-colonnes .footer-colonne {
+        display: block;
+        width: 34%;
+    } /*---------------------------------------------DEBUT FOOTER----------------------------------------*/
+ 
+
 }
+
+/*---------------------------------------FIN FORMAT TABLETTE  (769 - 991) ------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------DEBUT FORMAT ORDINATEUR  (992 - 1199 px) ------------------------------- */
+
+
+
+@media screen and (min-width: 991px)  { 
+    header .nav-bar { /*------------------------------------- DEBUT HEADER ---------------------------------- */
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    header nav .nav-menu-sinscrire {
+        margin: 50px 75px 0 0;
+    }
+    header nav.nav ul.nav-menu {
+        display: flex;
+        flex: 100%;
+        margin-top: 0;
+    }
+    header nav.nav ul.nav-menu li.active {
+        border-top: 2px solid #0065fc;
+        padding: 50px 25px 0 25px;
+        border-bottom: 0
+    }
+    header nav.nav ul.nav-menu li {
+        text-align: center;
+        border-bottom: 0
+    }
+    header nav .nav-menu-sinscrire {
+        margin: 52px 75px 0 25px;
+    }
+    header nav.nav ul.nav-menu li a {
+        display: block;
+        padding: 0;
+        color: black;
+        
+    }
+    header nav.nav ul.nav-menu .no-active { 
+        padding: 52px 25px 0 25px;
+    } /*---------------------------------------------FIN HEADER ------------------------------------------- */
+
+
+
+
+    .recherche-position button.search { /*----------------------DEBUT RECHERCHE POSITION ------------------ */
+        border: 0;
+        position: absolute;
+        top: 0;
+        border-radius: 0 18px 18px 0;
+        right: -10px;
+        display: block;
+        height: 50px;
+        font-size: 18px;
+        background: #0065fc;
+        color: white;
+        width: 27%;
+        outline-style: none;
+    }
+    button i.fas.fa-search {
+        display: none;
+    }
+    button span span {
+        display: block;
+    }  /*-------------------------------------------DEBUT RECHERCHE POSITION ------------------------------- */
+
+
+
+
+
+
+    .hebergements-marseille { /*----------------------DEBUT RECHERCHE POSITION ------------------------------ */
+        width: 100%;
+        padding: 50px 20px 50px 20px;
+        background: #f2f2f2;
+        margin: 45px 0px 0px 50px;
+        border-radius: 20px;
+    }
+    .hebergements-colonne1 {
+        display: flex;
+    }
+    .hebergements-colonne2 {
+        display: flex;
+    }
+    .hebergements-marseille .hebergements a.hebergement {
+        flex-direction: column;
+        display: flex;
+        align-items: stretch;
+        margin: 30px 20px 0px 20px;
+        background: white;
+        width: 34%;
+        border-radius: 25px;
+        padding: 5px;
+        box-shadow: 0px 0px 20px 0px #e9e9e9;
+        text-decoration: none;
+        min-height: 135px;
+    }
+    .hebergements-marseille .hebergements {
+        margin: 0;
+    }
+    .activites-marseille {
+        display: flex;
+        justify-content: space-between;
+    }
+    .activites {
+        width: 100%;
+        max-width: 330px;
+    }
+    .activites-simple .activite-image {
+        width: 100%;
+        max-width: 330px;
+        height: 390px;
+    }
+    #activite-image-185 {
+        height: 185px;
+        width: 100%;
+    }
+    #activite-image-155  {
+        width: 100%;
+        height: 155px;
+
+    }
+    #activite-image-145 {
+        width: 100%;
+        height: 145px;
+    }
+
+
+
+
+}
+
+
+
+/*-------------------------------------FIN FORMAT ORDINATEUR  (992 - 1199 px) ----------------------------- */
