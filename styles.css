@@ -18,6 +18,9 @@ body .container {
     padding: 0 15px;
 }
 
+
+
+
 /*------------------------------------------DEBUT HEADER-----------------------------------*/
 
 header {
@@ -110,11 +113,9 @@ h1 {
     border-radius: 14px 0 0 14px;
     font-size: 20px;
 }
-
 input#name::placeholder {
     color: black
 }
-
 input.favorite.styled {
     background: #0065fc;
     border: 0;
@@ -125,7 +126,6 @@ input.favorite.styled {
     outline-style: none;
     height: 51px; 
  }
-
  .recherche-position input#name {
     border: 2px solid #f2f2f2;
     width: calc(100% - 100px);
@@ -250,6 +250,8 @@ span.info-hebergement {
     background: #f2f2f2;
     margin-top: 40px;
     display: flex;
+    margin-left: -5%;
+    margin-right: -5%;
     padding-bottom: 35px;
 }
 h2 {
@@ -257,15 +259,9 @@ h2 {
     font-weight: bold;
     font-size: 23px;
 }
-
-
 aside.les-plus-populaire {
     width: 100%;
     padding: 50px 15px 0px 15px;
-}
-aside.les-plus-populaire {
-    width: 100%;
-    margin: 40px 15px 0px 15px;
 }
 aside.les-plus-populaire .populaire-titre {
     display: flex;
@@ -309,8 +305,7 @@ aside.les-plus-populaire a.populaire .populaire-description .prix {
 }
 aside.les-plus-populaire a.populaire .populaire-description .note {
     font-size: 11px;
-    margin-top: 45px;
-
+    margin-top: 17%;
 }
 aside.les-plus-populaire a.populaire .populaire-description .note .star-blue {
     color: #0065fc;
@@ -436,13 +431,10 @@ section.activites-a-marseille {
     text-decoration: none;
     min-height: 135px;
 }
-
-
 .activites-marseille a.activite .activite-image-div {
     flex: 35%;
     height: 115px;
 }
-
 .activites-marseille .activites a.activite .activite-name {
     font-family: 'raleway';
     font-weight: bold;
@@ -452,7 +444,6 @@ section.activites-a-marseille {
     padding: 25px 0 20px 20px;
     display: block;
 }
-
 img.activite-image {
     width: 100%;
     height: 100%;
@@ -468,8 +459,6 @@ img.activite-image {
 
 
 /*-------------------------------------------------- DEBUT FOOTER---------------------------------------------*/
-
-
 
 footer.bg-light-grey {
     font-size: 18px;
@@ -509,10 +498,16 @@ span.footer-title {
 
 /*---------------------------------------DEBUT FORMAT TABLETTE  (769 - 991) ------------------------------- */
 
-@media screen and (min-width: 769px ) { 
+@media screen and (min-width: 768px ) { 
     body .container {
         padding: 0 3%;
     }    
+
+
+
+
+
+
     /*------------------------DEBUT HEADER------------------------------*/ 
     header nav .logo-reservia {
         margin: 25px 0 0 50px;
@@ -520,25 +515,27 @@ span.footer-title {
     header nav .nav-menu-sinscrire {
         margin: 50px 50px 0 0;
     }
-
-    /*---------------------------------------------------------------FIN HEADER------------------------------*/ 
-    
-    
+    /*--------------------------FIN HEADER------------------------------*/ 
 
 
 
 
 
 
-    /*-----------DEBUT RECHERCHE CATEGORIE------------------------------*/
+
+    /*-------------------------BLOCK INFO-------------------------------*/ 
     .block-info-hebergements {
         display: flex;
     }
+    /*-------------------------BLOCK INFO-------------------------------*/ 
 
 
-    /*--------------------------------------DEBUT RECHERCHE CATEGORIE-----------------------------------------------*/
 
-    /*------------DEBUT HEBERGEMENT MARSEILLE POPULAIRE--------------------*/
+
+
+
+
+    /*----------DEBUT HEBERGEMENT MARSEILLE POPULAIRE--------------------*/
     .hebergements-marseille .hebergements {
         display: flex;
         flex-wrap: wrap;
@@ -558,11 +555,12 @@ span.footer-title {
         text-decoration: none;
         min-height: 135px;
     }
-    
     .Hebergments-populaire {
         background: #f2f2f2;
         margin-top: 40px;
         display: flex;
+        margin-left: 0;
+        margin-right: 0;
         border-radius: 20px;
         width: 100%;
     }
@@ -587,6 +585,14 @@ span.footer-title {
         text-decoration: none;
         min-height: 147px;
     }
+    aside.les-plus-populaire a.populaire .populaire-description .note {
+        font-size: 11px;
+        margin-top: 30%;
+    }
+    aside.les-plus-populaire a.populaire .populaire-description #note {
+        font-size: 11px;
+        margin-top: 34%;
+    }
     .hebergements-marseille {
         width: 100%;
         padding: 50px 40px 50px 40px;
@@ -594,26 +600,17 @@ span.footer-title {
         margin: 40px 0 0 0;
         border-radius: 20px;
     }
-    /*--------------------------------------------------FIN HEBERGEMENT MARSEILLE POPULAIRE--------------------*/
+    /*-----------FIN HEBERGEMENT MARSEILLE POPULAIRE-------------------*/
 
 
 
 
-
-
-
-
-    /*--------------------------------------------------DEBUT ACTIVITE MARSEILLE--------------------------------*/
-    /*--------------------------------------------------FIN ACTIVITE MARSEILL------------------------------------*/
-    
     
 
 
 
-
-
-
-    footer.bg-light-grey { /*-------------------------DEBUT FOOTER----------------------------------------*/
+    /*-------------------------DEBUT FOOTER----------------------------*/
+    footer.bg-light-grey { 
         font-size: 18px;
         margin-top: 50px;
         padding-top: 0px;
@@ -627,12 +624,11 @@ span.footer-title {
     footer.bg-light-grey .footer-colonnes .footer-colonne {
         display: block;
         width: 34%;
-    } /*---------------------------------------------DEBUT FOOTER----------------------------------------*/
- 
+    } 
+    /*--------------------------FIN FOOTER---------------------------*/
 
 }
-
-/*---------------------------------------FIN FORMAT TABLETTE  (769 - 991) ------------------------------- */
+/*----------------------------------------FIN FORMAT TABLETTE  (769 - 991) ------------------------------- */
 
 
 
@@ -650,7 +646,9 @@ span.footer-title {
 
 
 @media screen and (min-width: 991px)  { 
-    header .nav-bar { /*------------------------------------- DEBUT HEADER ---------------------------------- */
+
+    /*----------------------- DEBUT HEADER --------------------- */
+    header .nav-bar { 
         display: flex;
         flex-direction: row-reverse;
     }
@@ -682,12 +680,17 @@ span.footer-title {
     }
     header nav.nav ul.nav-menu .no-active { 
         padding: 52px 25px 0 25px;
-    } /*---------------------------------------------FIN HEADER ------------------------------------------- */
+    } 
+    /*---------------------FIN HEADER ------------------------- */
 
 
 
 
-    .recherche-position button.search { /*----------------------DEBUT RECHERCHE POSITION ------------------ */
+
+
+
+    /*-------------------DEBUT RECHERCHE POSITION --------------- */
+    .recherche-position button.search { 
         border: 0;
         position: absolute;
         top: 0;
@@ -706,13 +709,16 @@ span.footer-title {
     }
     button span span {
         display: block;
-    }  /*-------------------------------------------DEBUT RECHERCHE POSITION ------------------------------- */
+    }  
+    /*---------------------FIN RECHERCHE POSITION ---------------- */
 
 
 
 
 
-    /*----------------------DEBUT RECHERCHE POSITION ------------------------------ */
+
+
+    /*----------------DEBUT  HEBERGEMENTS MARSEILLE-------------------- */
     section.hebergements-marseille-populaire { 
         display: flex;
         align-items: stretch;
@@ -728,6 +734,33 @@ span.footer-title {
     .hebergements-marseille .hebergements a.hebergement { 
         width: 31.5%;
     }
+    /*----------------FIN  HEBERGEMENTS MARSEILLE---------------------- */
+
+
+
+
+
+
+
+
+    /*-------------------------DEBUT  POPULAIRE------------------------ */
+    aside.les-plus-populaire a.populaire .populaire-description .note {
+        font-size: 11px;
+        margin-top: 36%;
+    }
+    aside.les-plus-populaire a.populaire .populaire-description #note {
+        font-size: 11px;
+        margin-top: 27%;
+    }
+    /*-------------------------FIN  POPULAIRE------------------------ */
+
+
+
+
+
+
+
+    /*-------------------DEBUT ACTIVITES MARSEILLE-------------------- */
     .activites-marseille {
         display: flex;
         justify-content: space-between;
@@ -758,12 +791,6 @@ span.footer-title {
         width: 100%;
         height: 145px;
     }
-
-
-
-
+    /*-------------------DEBUT ACTIVITES MARSEILLE-------------------- */
 }
-
-
-
 /*-------------------------------------FIN FORMAT ORDINATEUR  (992 - 1199 px) ----------------------------- */
