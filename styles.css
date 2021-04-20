@@ -734,6 +734,10 @@ span.footer-title {
     .hebergements-marseille .hebergements a.hebergement { 
         width: 31.5%;
     }
+    .hebergements-marseille .hebergements a.hebergement .hebergement-image-div {
+        flex: unset;
+        height: 115px;
+    }
     /*----------------FIN  HEBERGEMENTS MARSEILLE---------------------- */
 
 
@@ -765,32 +769,40 @@ span.footer-title {
         display: flex;
         justify-content: space-between;
     }
-    .activites {
-        width: 24%;
-    }
-    .activites-double {
-        width: 24%;
+
+    .activites{
+        width: 22%;
     }
     .activites-double .activites {
         width: 100%;
     }
-    .activites-simple .activite-image {
-        width: 100%;
+    .activites-marseille .activites-simple a.activite .activite-image-div {
+        flex: unset;
         height: 390px;
+        overflow: hidden;
     }
-    #activite-image-185 {
-        height: 185px;
-        width: 100%;
+    .activites-double {
+        width: 24%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
     }
-    #activite-image-155  {
-        width: 100%;
+    #activite-image-182 {
+        height: 182px;
+        flex: unset;
+    }
+    #activite-image-110 {
+        height: 110px;
+        flex: unset;
+    }
+    #activite-image-140 {
+        height: 140px;
+        flex: unset;
+    }
+    #activite-image-155 {
         height: 155px;
-
+        flex: unset;
     }
-    #activite-image-145 {
-        width: 100%;
-        height: 145px;
-    }
-    /*-------------------DEBUT ACTIVITES MARSEILLE-------------------- */
+    /*-------------------FIN ACTIVITES MARSEILLE-------------------- */
 }
 /*-------------------------------------FIN FORMAT ORDINATEUR  (992 - 1199 px) ----------------------------- */
