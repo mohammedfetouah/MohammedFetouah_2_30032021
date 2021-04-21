@@ -144,7 +144,7 @@ input.favorite.styled {
     position: absolute;
     top: 0;
     border-radius: 18px;
-    right: 25px;
+    right: 10px;
     display: block;
     height: 50px;
     font-size: 18px;
@@ -167,10 +167,10 @@ input.favorite.styled {
 /*---------------------------------DEBUT RECHERCHE CATEGORIE------------------------------*/
 
 
-li.recherche-categorie {
-    margin-top: 35px;
+.recherche-categorie {
+    margin-top: 48px; 
 }
-li.recherche-categorie span.filtres {
+.recherche-categorie span.filtres {
     font-size: 18px;
     font-family: 'raleway';
     font-weight: bold;
@@ -178,10 +178,16 @@ li.recherche-categorie span.filtres {
 .recherche-filtres .recherche-filtre {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 15px;
+    margin-top: 20px;
+    margin-left: -15px;
+}
+.recherche-filtres {
+    display: flex;
+    flex-direction: column;
 }
 .recherche-filtre li {
-    margin: 10px;
+    margin-left: 25px;
+    margin-bottom: 25px;
 }
 .recherche-filtre-button {
     height: 48px;
@@ -218,7 +224,7 @@ span.recherche-filtre-name {
 /*---------------------------------------DEBUT INFO HEBERGEMENTS-------------------------------*/
 
 .block-info-hebergements {
-    margin: 15px;
+    margin-top: 20px;
     display: flex;
 }
 span.info-icon {
@@ -498,36 +504,47 @@ span.footer-title {
 
 /*---------------------------------------DEBUT FORMAT TABLETTE  (769 - 991) ------------------------------- */
 
-@media screen and (min-width: 768px ) { 
+@media screen and (min-width: 768px) { 
     body .container {
         padding: 0 3%;
-    }    
-
-
-
-
-
-
-    /*------------------------DEBUT HEADER------------------------------*/ 
+    } 
+    
+    
+     /*------------------------DEBUT HEADER------------------------------*/ 
     header nav .logo-reservia {
         margin: 25px 0 0 50px;
     }
     header nav .nav-menu-sinscrire {
         margin: 50px 50px 0 0;
     }
-    /*--------------------------FIN HEADER------------------------------*/ 
+    /*--------------------------FIN HEADER------------------------------*/
+ 
+
+
+
+    /*------------------DEBUT RECHERCHE FILTRES--------------------------*/
+    .recherche-filtres {
+        display: flex;
+        flex-direction:unset
+    }
+    .recherche-filtres .recherche-filtre {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 33px;
+        margin-left: 0;
+    }
+    /*----------------------FIN RECHERCHE FILTRES--------------------------*/
 
 
 
 
 
-
-
-    /*-------------------------BLOCK INFO-------------------------------*/ 
+    
+    /*-------------------------DEBUT BLOCK INFO-------------------------------*/ 
     .block-info-hebergements {
         display: flex;
     }
-    /*-------------------------BLOCK INFO-------------------------------*/ 
+     /*------------------------- FIN BLOCK INFO-------------------------------*/ 
 
 
 
@@ -535,7 +552,7 @@ span.footer-title {
 
 
 
-    /*----------DEBUT HEBERGEMENT MARSEILLE POPULAIRE--------------------*/
+      /*----------DEBUT HEBERGEMENT MARSEILLE POPULAIRE--------------------*/
     .hebergements-marseille .hebergements {
         display: flex;
         flex-wrap: wrap;
@@ -600,7 +617,7 @@ span.footer-title {
         margin: 40px 0 0 0;
         border-radius: 20px;
     }
-    /*-----------FIN HEBERGEMENT MARSEILLE POPULAIRE-------------------*/
+     /*-----------FIN HEBERGEMENT MARSEILLE POPULAIRE-------------------*/
 
 
 
@@ -609,7 +626,7 @@ span.footer-title {
 
 
 
-    /*-------------------------DEBUT FOOTER----------------------------*/
+     /*-------------------------DEBUT FOOTER----------------------------*/
     footer.bg-light-grey { 
         font-size: 18px;
         margin-top: 50px;
@@ -624,9 +641,7 @@ span.footer-title {
     footer.bg-light-grey .footer-colonnes .footer-colonne {
         display: block;
         width: 34%;
-    } 
-    /*--------------------------FIN FOOTER---------------------------*/
-
+    } /*--------------------------FIN FOOTER---------------------------*/ 
 }
 /*----------------------------------------FIN FORMAT TABLETTE  (769 - 991) ------------------------------- */
 
