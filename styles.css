@@ -8,6 +8,7 @@
     src: url('fonts/Raleway-Black.ttf');
     font-style: normal;
 }
+
 body {
     font-family: 'raleway';
 }
@@ -19,10 +20,7 @@ body .container {
 }
 
 
-
-
-/*------------------------------------------DEBUT HEADER-----------------------------------*/
-
+/*--DEBUT HEADER--*/
 header {
     width: 100%;
 }
@@ -73,16 +71,11 @@ header nav.nav ul.nav-menu li a {
     padding: 10px 0;
     color: black;
 }
-/*--------------------------------------------FIN HEADER-----------------------------------*/
+/*--FIN HEADER--*/
 
 
 
-
-
-
-
-/*---------------------------------------DEBUT RECHERCHE FORM-------------------------------*/
-
+/*--DEBUT RECHERCHE FORMULAIRE--*/
 h1 {
     font-family: 'Raleway';
     font-weight: bold;
@@ -156,17 +149,12 @@ input.favorite.styled {
     button span span {
     display: none;
 }
-/*---------------------------------------FIN RECHERCHE FORM-------------------------------*/
+/*--FIN RECHERCHE FORMULAIRE--*/
 
 
 
 
-
-
-
-/*---------------------------------DEBUT RECHERCHE CATEGORIE------------------------------*/
-
-
+/*--DEBUT RECHERCHE CATEGORIE--*/
 .recherche-categorie {
     margin-top: 48px; 
 }
@@ -213,16 +201,13 @@ span.recherche-filtre-icon {
 span.recherche-filtre-name {
     margin: 0 10px 0 40px;
 }
-/*--------------------------------------FIN RECHERCHE CATEGORIES-------------------------------*/
+/*--FIN RECHERCHE CATEGORIES--*/
 
 
 
 
 
-
-
-/*---------------------------------------DEBUT INFO HEBERGEMENTS-------------------------------*/
-
+/*--DEBUT INFO HEBERGEMENTS--*/
 .block-info-hebergements {
     margin-top: 20px;
     display: flex;
@@ -242,7 +227,7 @@ span.info-hebergement {
     margin-top: 2px;
     margin-left: 10px;
 }
-/*----------------------------------------------------- FIN INFO HEBERGEMENTS-------------------------------*/
+/*--FIN INFO HEBERGEMENTS--*/
 
 
 
@@ -251,7 +236,7 @@ span.info-hebergement {
 
 
 
-/*----------------------------------------- DEBUT BLOCK HEBERGEMENTS-POPULAIRE-------------------------------*/
+/*--DEBUT BLOCK HEBERGEMENTS-POPULAIRE--*/
 .Hebergments-populaire {
     background: #f2f2f2;
     margin-top: 40px;
@@ -325,19 +310,13 @@ img.populaire-images {
     border-radius: 20px 0 0 20px;
     object-fit: cover;
 }
-
-/*----------------------------------------- FIN BLOCK HEBERGEMENTS-POPULAIRE---------------------------------*/
-
+/*--FIN BLOCK HEBERGEMENTS-POPULAIRE--*/
 
 
 
 
 
-
-
-
-/*-------------------------------------------- DEBUT HEBERGEMENTS A MARSEILLE---------------------------------*/
-
+/*-- DEBUT HEBERGEMENTS A MARSEILLE--*/
 .hebergements-a-marseille {
     background: white;
     display: flex;
@@ -356,6 +335,7 @@ img.populaire-images {
     margin: 30px 0px 0px 0px;
     background: white;
     border-radius: 25px;
+    height: 200px;
     padding: 5px;
     box-shadow: 0px 0px 20px 0px #e9e9e9;
     text-decoration: none;
@@ -380,13 +360,13 @@ img.populaire-images {
 }
 .hebergements-marseille .hebergements a.hebergement .hebergement-description .prix {
     display: block;
-    padding-top: 10px;
+    padding-top: 6px;
     font-size: 15px;
     color: black;
 }
 .hebergements-marseille .hebergements a.hebergement .hebergement-description .note {
     display: block;
-    padding: 10px 0 5px 0;
+    padding: 9px 0 5px 0;
     font-size: 11px;
 }
 .hebergements-marseille .hebergements a.hebergement .hebergement-description .note .star-blue {
@@ -412,17 +392,12 @@ img.hebergement-images {
     padding-left: 20px;
     font-size: 18px;
 }
-
-/*-------------------------------------------- FIN HEBERGEMENTS A MARSEILLE---------------------------------*/
-
+/*--FIN HEBERGEMENTS A MARSEILLE--*/
 
 
 
 
-
-
-/*------------------------------------------ DEBUT ACTIVITE A MARSEILLE---------------------------------------*/
-
+/*--DEBUT ACTIVITE A MARSEILLE--*/
 section.activites-a-marseille {
     margin-top: 60px;
 }
@@ -456,16 +431,12 @@ img.activite-image {
     border-radius: 20px 20px 0 0;
     object-fit: cover;
 }
-
-/*------------------------------------------ FIN ACTIVITE A MARSEILLE---------------------------------------*/
-
+/*--FIN ACTIVITE A MARSEILLE--*/
 
 
 
 
-
-/*-------------------------------------------------- DEBUT FOOTER---------------------------------------------*/
-
+/*--DEBUT FOOTER--*/
 footer.bg-light-grey {
     font-size: 18px;
     margin-top: 50px;
@@ -490,7 +461,7 @@ span.footer-title {
     font-size: 15px;
 }
 
-/*-------------------------------------------------- FIN FOOTER---------------------------------------------*/
+/*--FIN FOOTER--*/
 
 
 
@@ -502,7 +473,7 @@ span.footer-title {
 
 
 
-/*---------------------------------------DEBUT FORMAT TABLETTE  (769 - 991) ------------------------------- */
+/*--DEBUT FORMAT TABLETTE  (769 - 991)--*/
 
 @media screen and (min-width: 768px) { 
     body .container {
@@ -510,19 +481,19 @@ span.footer-title {
     } 
     
     
-     /*------------------------DEBUT HEADER------------------------------*/ 
+     /*--DEBUT HEADER--*/ 
     header nav .logo-reservia {
         margin: 25px 0 0 50px;
     }
     header nav .nav-menu-sinscrire {
         margin: 50px 50px 0 0;
     }
-    /*--------------------------FIN HEADER------------------------------*/
+    /*--FIN HEADER--*/
  
 
 
 
-    /*------------------DEBUT RECHERCHE FILTRES--------------------------*/
+    /*--DEBUT RECHERCHE FILTRES--*/
     .recherche-filtres {
         display: flex;
         flex-direction:unset
@@ -533,26 +504,21 @@ span.footer-title {
         margin-top: 33px;
         margin-left: 0;
     }
-    /*----------------------FIN RECHERCHE FILTRES--------------------------*/
-
-
+    /*--FIN RECHERCHE FILTRES--*/
 
 
 
     
-    /*-------------------------DEBUT BLOCK INFO-------------------------------*/ 
+    /*--DEBUT BLOCK INFO--*/ 
     .block-info-hebergements {
         display: flex;
     }
-     /*------------------------- FIN BLOCK INFO-------------------------------*/ 
+     /*--FIN BLOCK INFO--*/ 
 
 
 
 
-
-
-
-      /*----------DEBUT HEBERGEMENT MARSEILLE POPULAIRE--------------------*/
+     /*--DEBUT HEBERGEMENT MARSEILLE POPULAIRE--*/
     .hebergements-marseille .hebergements {
         display: flex;
         flex-wrap: wrap;
@@ -617,7 +583,7 @@ span.footer-title {
         margin: 40px 0 0 0;
         border-radius: 20px;
     }
-     /*-----------FIN HEBERGEMENT MARSEILLE POPULAIRE-------------------*/
+     /*--FIN HEBERGEMENT MARSEILLE POPULAIRE--*/
 
 
 
@@ -626,7 +592,7 @@ span.footer-title {
 
 
 
-     /*-------------------------DEBUT FOOTER----------------------------*/
+     /*--DEBUT FOOTER--*/
     footer.bg-light-grey { 
         font-size: 18px;
         margin-top: 50px;
@@ -641,9 +607,9 @@ span.footer-title {
     footer.bg-light-grey .footer-colonnes .footer-colonne {
         display: block;
         width: 34%;
-    } /*--------------------------FIN FOOTER---------------------------*/ 
+    } /*--FIN FOOTER--*/ 
 }
-/*----------------------------------------FIN FORMAT TABLETTE  (769 - 991) ------------------------------- */
+/*--FIN FORMAT TABLETTE  (769 - 991)--*/
 
 
 
@@ -656,13 +622,13 @@ span.footer-title {
 
 
 
-/*----------------------------------DEBUT FORMAT ORDINATEUR  (992 - 1199 px) ------------------------------- */
+/*--DEBUT FORMAT ORDINATEUR  (992 - 1199 px)--*/
 
 
 
 @media screen and (min-width: 991px)  { 
 
-    /*----------------------- DEBUT HEADER --------------------- */
+    /*-- DEBUT HEADER---*/
     header .nav-bar { 
         display: flex;
         flex-direction: row-reverse;
@@ -696,7 +662,7 @@ span.footer-title {
     header nav.nav ul.nav-menu .no-active { 
         padding: 52px 25px 0 25px;
     } 
-    /*---------------------FIN HEADER ------------------------- */
+    /*--FIN HEADER--*/
 
 
 
@@ -704,7 +670,7 @@ span.footer-title {
 
 
 
-    /*-------------------DEBUT RECHERCHE POSITION --------------- */
+    /*--DEBUT RECHERCHE POSITION--*/
     .recherche-position button.search { 
         border: 0;
         position: absolute;
@@ -725,7 +691,7 @@ span.footer-title {
     button span span {
         display: block;
     }  
-    /*---------------------FIN RECHERCHE POSITION ---------------- */
+    /*--FIN RECHERCHE POSITION--*/
 
 
 
@@ -733,7 +699,7 @@ span.footer-title {
 
 
 
-    /*----------------DEBUT  HEBERGEMENTS MARSEILLE-------------------- */
+    /*--DEBUT  HEBERGEMENTS MARSEILLE--*/
     section.hebergements-marseille-populaire { 
         display: flex;
         align-items: stretch;
@@ -753,7 +719,7 @@ span.footer-title {
         flex: unset;
         height: 115px;
     }
-    /*----------------FIN  HEBERGEMENTS MARSEILLE---------------------- */
+    /*--FIN  HEBERGEMENTS MARSEILLE--*/
 
 
 
@@ -762,7 +728,7 @@ span.footer-title {
 
 
 
-    /*-------------------------DEBUT  POPULAIRE------------------------ */
+    /*--DEBUT  POPULAIRE--*/
     aside.les-plus-populaire a.populaire .populaire-description .note {
         font-size: 11px;
         margin-top: 36%;
@@ -771,7 +737,7 @@ span.footer-title {
         font-size: 11px;
         margin-top: 27%;
     }
-    /*-------------------------FIN  POPULAIRE------------------------ */
+    /*--FIN  POPULAIRE--*/
 
 
 
@@ -779,7 +745,7 @@ span.footer-title {
 
 
 
-    /*-------------------DEBUT ACTIVITES MARSEILLE-------------------- */
+    /*--DEBUT ACTIVITES MARSEILLE--*/
     .activites-marseille {
         display: flex;
         justify-content: space-between;
@@ -818,6 +784,6 @@ span.footer-title {
         height: 155px;
         flex: unset;
     }
-    /*-------------------FIN ACTIVITES MARSEILLE-------------------- */
+    /*--FIN ACTIVITES MARSEILLE--*/
 }
-/*-------------------------------------FIN FORMAT ORDINATEUR  (992 - 1199 px) ----------------------------- */
+/*--FIN FORMAT ORDINATEUR  (992 - 1199 px)--*/
