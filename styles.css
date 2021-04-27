@@ -181,7 +181,7 @@ input.favorite.styled {
     height: 48px;
     font-size: 18px;
     background: white;
-    border: 1px solid #d9d9d9;
+    border: 2px solid #d9d9d9;
     border-radius: 25px;
     outline-style: none;
     position: relative;
