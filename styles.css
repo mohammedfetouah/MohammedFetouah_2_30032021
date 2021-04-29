@@ -20,6 +20,8 @@ body .container {
 }
 
 
+
+
 /*--DEBUT HEADER--*/
 header {
     width: 100%;
@@ -191,12 +193,15 @@ span.recherche-filtre-icon {
     background: #deebff;
     position: absolute;
     font-size: 20px;
-    top: -2px;
+    top: -3px;
     height: 50px;
     line-height: 50px;
     left: -9px;
     color: #0065fc;
     border-radius: 105px;
+}
+button.recherche-filtre-button:hover {
+    cursor: pointer;
 }
 span.recherche-filtre-name {
     margin: 0 10px 0 40px;
