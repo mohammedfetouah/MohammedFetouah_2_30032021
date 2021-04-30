@@ -202,7 +202,8 @@ span.recherche-filtre-icon {
 }
 button.recherche-filtre-button:hover {
     cursor: pointer;
-    color: #868686;
+    background: #deebff;
+    border: 2px solid #deebff;
 }
 span.recherche-filtre-name {
     margin: 0 10px 0 40px;
